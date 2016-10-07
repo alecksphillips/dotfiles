@@ -1,2 +1,2 @@
-CMDSTAN_HOME = "/home/alecks/git/cmdstan"
+CMDSTAN_HOME = homedir()*"/git/cmdstan"
 JULIA_SVG_BROWSER = "google-chrome-stable"
