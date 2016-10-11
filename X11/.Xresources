@@ -58,3 +58,5 @@
 URxvt.font: xft:Droid Sans Mono Dotted for Powerline:size=10
 
 #URxvt.letterspace: -1
+
+URxvt.scrollBar: false
