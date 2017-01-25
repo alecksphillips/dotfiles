@@ -16,7 +16,7 @@ set $mod Mod1
 for_window [class="^.*"] border pixel 0
 
 gaps inner 15
-gaps outer 5 
+gaps outer 5
 
 smart_gaps on
 
@@ -24,6 +24,11 @@ smart_borders on
 
 bindsym $mod+i sticky toggle
 
+bindsym $mod+minus scratchpad show
+
+for_window [class="spotify"] floating enable, resize set 890px 210px, move position 515px 22px, move scratchpad, sticky enable
+
+bindsym $mod+Shift+minus move scratchpad
 
 bindsym $mod+Shift+m move workspace to output right
 bindsym $mod+Shift+n move workspace to output left
