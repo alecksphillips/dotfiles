@@ -234,7 +234,7 @@ set suspend
 ##
 ## To include all existing syntax definitions, you can do:
 include "/usr/share/nano/*.nanorc"
-include ".nano/julia.nanorc"
+include "~/.nano/julia.nanorc"
 
 ## Key bindings.
 ## See nanorc(5) (section REBINDING KEYS) for more details on this.
