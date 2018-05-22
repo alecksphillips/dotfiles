@@ -42,6 +42,10 @@ bindsym $mod+Shift+g mode "$mode_gaps"
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 
+bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 1+ unmute"
+bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 1- unmute"
+bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
+
 bindsym XF86ScreenSaver exec lock
 
 mode "$mode_gaps" {
@@ -76,8 +80,10 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-
-
+mode "passthrough" {
+        bindsym $mod+F12 mode "default"
+}
+bindsym $mod+F12 mode "passthrough"
 
 
 # Font for window titles. Will also be used by the bar unless a different font

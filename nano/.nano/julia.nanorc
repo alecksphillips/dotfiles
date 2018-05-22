@@ -1,8 +1,8 @@
 syntax "julia" "\.jl$"
 
-color brightblack  "\<(begin|break|catch|continue|function|elseif|else|end)\>"
-color brightblack  "\<(finally|for|global|local|if|include|using|require|macro)\>"
-color brightblack  "\<(println|return|try|type|while|module)\>"
+color brightyellow  "\<(begin|break|catch|continue|function|elseif|else|end)\>"
+color brightyellow "\<(finally|for|global|local|if|include|using|require|macro)\>"
+color brightyellow  "\<(println|return|try|type|while|module)\>"
 color brightblue "[A-Za-z_][A-Za-z0-9_]*[[:space:]]*[(]"
 color white    "[(]"
 color red "[-+*/|=%<>&~^]|\<(and|not|or|is|in)\>"
