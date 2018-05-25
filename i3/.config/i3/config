@@ -24,13 +24,11 @@ smart_borders on
 
 bindsym $mod+i sticky toggle
 
-##Scratchpad
 bindsym $mod+minus scratchpad show
 
 for_window [class="spotify"] floating enable, resize set 890px 210px, move position 515px 22px, move scratchpad, sticky enable
 
 bindsym $mod+Shift+minus move scratchpad
-
 
 bindsym $mod+Shift+m move workspace to output right
 bindsym $mod+Shift+n move workspace to output left
