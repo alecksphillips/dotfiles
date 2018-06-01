@@ -74,6 +74,7 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+export TERMINAL='gnome-terminal'
 
 eval "$(thefuck --alias)"
 # You can use whatever you want as an alias, like for Mondays:
@@ -87,5 +88,3 @@ eval "$(thefuck --alias FUCK)"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias sshuni="ssh -X aphill@linux1.csc.liv.ac.uk"
-alias sshlab="ssh -X aphill@lab.biospi.org"
