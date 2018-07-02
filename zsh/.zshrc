@@ -74,6 +74,7 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+source .githubpat
 
 eval "$(thefuck --alias)"
 # You can use whatever you want as an alias, like for Mondays:
