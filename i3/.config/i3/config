@@ -85,6 +85,21 @@ mode "passthrough" {
 }
 bindsym $mod+F12 mode "passthrough"
 
+#Display config mode
+set $mode_display Monitor Control (a) DP ON, (s) DP OFF, (l) HDMI ON, (k) HDMI OFF
+mode "$mode_display" {
+    #Left monitor
+    bindsym a exec --no-startup-id xrandr --output DP-2 --auto --left-of HDMI-0, mode "default"
+    bindsym s exec --no-startup-id xrandr --output DP-2 --off, mode "default"
+    bindsym l exec --no-startup-id xrandr --output HDMI-0 --auto --right-of DP-2, mode "default"
+    bindsym k exec --no-startup-id xrandr --output HDMI-0 --off, mode "default"
+
+    #Back to Normal
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+u mode "$mode_display"
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -105,7 +120,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -237,3 +252,11 @@ exec --no-startup-id nitrogen --restore
 
 #Network Manager in bar
 exec --no-startup-id nm-applet
+
+#Compton
+exec --no-startup-id compton
+
+
+#Default Workspaces
+for_window [class="Spotify"] move to workspace 10
+
