@@ -76,6 +76,7 @@ source $ZSH/oh-my-zsh.sh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 export TERMINAL='gnome-terminal'
+source .githubpat
 
 eval "$(thefuck --alias)"
 # You can use whatever you want as an alias, like for Mondays:
