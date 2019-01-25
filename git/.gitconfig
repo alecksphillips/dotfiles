@@ -4,4 +4,10 @@
 [credential]
 	helper = cache --timeout=3600
 [core]
-	editor = atom --wait
+	editor = nano
+
+[url "https://aur.archlinux.org/"]
+	insteadOf = aur:
+
+[url "aur@aur.archlinux.org:"]
+        pushInsteadOf = "aur:"
