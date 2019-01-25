@@ -39,11 +39,11 @@ tztime local {
 }
 
 load {
-        format = "%1min"
+        format = "Load: %1min"
 }
 
 disk "/" {
-        format = "%avail"
+        format = "Root: %avail avail."
 }
 
 #window_title_async {

@@ -53,7 +53,8 @@ plugins=(git arch)
 
 # User configuration
 
-  export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/bin:/home/alecks/go/bin:/home/alecks/opt:/home/alecks/.gem/ruby/2.6.0/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -74,6 +75,8 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+export TERMINAL='gnome-terminal'
+source .githubpat
 
 eval "$(thefuck --alias)"
 # You can use whatever you want as an alias, like for Mondays:
@@ -87,5 +90,3 @@ eval "$(thefuck --alias FUCK)"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias sshuni="ssh -X aphill@linux1.csc.liv.ac.uk"
-alias sshlab="ssh -X aphill@lab.biospi.org"
