@@ -5,3 +5,9 @@
 	helper = cache --timeout=3600
 [core]
 	editor = nano
+
+[url "https://aur.archlinux.org/"]
+	insteadOf = aur:
+
+[url "aur@aur.archlinux.org:"]
+        pushInsteadOf = "aur:"
