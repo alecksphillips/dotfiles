@@ -9,7 +9,7 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1
+set $mod Mod4
 
 #Disable titlebars
 #new_window 1pixel
@@ -42,9 +42,9 @@ bindsym $mod+Shift+g mode "$mode_gaps"
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 
-bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 1+ unmute"
-bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 1- unmute"
-bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
+bindsym XF86AudioRaiseVolume exec "ponymix increase 5; py3-cmd refresh volume_status"
+bindsym XF86AudioLowerVolume exec "ponymix decrease 5; py3-cmd refresh volume_status"
+bindsym XF86AudioMute exec "ponymix toggle; py3-cmd refresh volume_status"
 
 bindsym XF86ScreenSaver exec lock
 
@@ -256,6 +256,7 @@ exec --no-startup-id nm-applet
 #Compton
 exec --no-startup-id compton
 
+exec nextcloud
 
 #Default Workspaces
 for_window [class="Spotify"] move to workspace 10

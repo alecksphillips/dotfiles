@@ -17,6 +17,7 @@ general {
 order += scratchpad_counter
 order += arch_updates
 order += "disk /"
+order += "disk /home"
 #order += "run_watch DHCP"
 #order += "run_watch VPN"
 #order += "wireless _first_"
@@ -65,5 +66,9 @@ load {
 }
 
 disk "/" {
-        format = "Root: %avail avail."
+        format = "/: %avail avail."
+}
+
+disk "/home" {
+        format = "/home: %avail avail."
 }

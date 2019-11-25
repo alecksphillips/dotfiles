@@ -57,6 +57,8 @@ plugins=(git archlinux chucknorris)
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/bin:/home/alecks/go/bin:/home/alecks/opt:/home/alecks/.gem/ruby/2.6.0/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+export LD_LIBRARY_PATH=/opt/cuda/lib64/
+
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
