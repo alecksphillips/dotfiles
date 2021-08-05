@@ -14,7 +14,7 @@ general {
 #order += "ipv6"
 #order += kdeconnector
 #order += uname
-order += scratchpad_counter
+order += scratchpad
 order += arch_updates
 order += "disk /"
 order += "disk /home"
