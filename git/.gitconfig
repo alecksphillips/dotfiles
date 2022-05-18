@@ -1,6 +1,6 @@
 [user]
 	email = alecks.phillips@gmail.com
-	name = Al Phillips
+	name = Alex Phillips
 [credential]
 	helper = cache --timeout=3600
 [core]
