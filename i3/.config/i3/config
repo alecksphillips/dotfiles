@@ -258,6 +258,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id compton
 
 exec nextcloud
+exec syncthingtray
 
 #Default Workspaces
 for_window [class="Spotify"] move to workspace 10
