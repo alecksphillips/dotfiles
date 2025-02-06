@@ -94,3 +94,18 @@ eval "$(thefuck --alias FUCK)"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias naon="nano"
+alias dua="du -hs .[^.]*"
+alias pacman-orphans="pacman -Qtdq"
+alias pacman-remove-orphans="pacman -Qtdq | pacman -Rns -"
+alias pacman-unneeded="pacman -Qqd | pacman -Rsu --print -"
+
+
+#if [ -f ~/.conda_init ]; then
+#    source ~/.conda_init
+#else
+#    print "404: ~/.conda_init not found."
+#fi
+alias condainit="source ~/.conda_init"
+
+
