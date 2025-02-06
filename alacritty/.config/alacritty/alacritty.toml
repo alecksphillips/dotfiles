@@ -1,0 +1,13 @@
+
+[cursor.style]
+shape = "Block"
+
+[font]
+size = 11.0
+
+[font.normal]
+family = "Droid Sans Mono Dotted for Powerline"
+style = "Regular"
+
+[general]
+import = ["/home/alecks/.config/alacritty/themes/themes/gruvbox_material_hard_dark.toml"]
